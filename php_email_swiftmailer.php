@@ -1,6 +1,15 @@
 <?php
 require_once 'vendor/autoload.php';
 
+// create a config.json with following data
+/*
+{
+    "username": "username",
+    "password": "password",
+    "email": "email address"
+}
+*/
+
 // get username and password for email from config file
 $data = file_get_contents('config.json');
 $json = json_decode($data);
