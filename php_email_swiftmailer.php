@@ -18,7 +18,7 @@ $mailer = new Swift_Mailer($transport);
 // Create a message
 $message = (new Swift_Message('Wonderful Subject'))
   ->setFrom(['john@doe.com' => 'John Doe'])
-  ->setTo(['saeid@fastmail.fm'])
+  ->setTo([$json->email])
   ->setBody('Here is the message itself')
   ;
 
